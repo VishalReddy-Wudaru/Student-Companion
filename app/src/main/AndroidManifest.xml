@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vishal_pc.project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_student"
+        android:label="Student Companion"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NotesInput" />
+        <activity android:name=".DisplayNotes" />
+        <activity android:name=".NotesDetail" />
+        <activity android:name=".DisplaySubjects" />
+        <activity android:name=".SubjectInput" />
+        <activity android:name=".SubjectDetail" />
+        <activity android:name=".EditNotes" />
+        <activity android:name=".EditSubjects" />
+        <activity android:name=".Bunk" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".TimeTable"
+            android:screenOrientation="landscape" />
+        <activity android:name=".PeriodsDetail" />
+        <activity android:name=".EditPeriods"></activity>
+    </application>
+
+</manifest>

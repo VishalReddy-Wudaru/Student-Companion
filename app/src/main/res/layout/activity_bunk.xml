@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bunk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vishal_pc.project.Bunk">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wanna Bunk?"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_alignParentBottom="true"
+        android:onClick="calculation"
+        android:id="@+id/button1"
+        android:textSize="20dp" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button2"
+        android:background="@drawable/reset"
+        android:layout_alignParentEnd="true"
+        android:onClick="reset"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_below="@+id/et3"
+        android:hint="Let's check the possibility"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:textAlignment="center"
+        android:layout_above="@id/button1"
+        android:textSize="30dp"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn"
+        android:background="@drawable/home"
+        android:textSize="20dp"
+        android:onClick="back"
+        />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:hint="Classes Held"
+        android:id="@+id/et1"
+        android:textSize="25dp"
+        android:background="@drawable/textinput"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:layout_below="@+id/btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:id="@+id/et2"
+        android:background="@drawable/textinput"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:hint="Classes Attended"
+        android:inputType="numberDecimal"
+        android:layout_above="@+id/et3"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textinput"
+        android:id="@+id/et3"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:hint="Attendance Criteria"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/et1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
